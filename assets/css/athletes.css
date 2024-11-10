@@ -1,0 +1,610 @@
+.athletes-presentation{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.athletes-presentation-container {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.athletes-presentation-img {
+    width: 100%; 
+    height: 33vh;
+    aspect-ratio: 16 / 9;
+    background-image: url(../img/athletes/athletes-presentation.png);
+    background-size: cover; 
+    background-position: top center;
+    background-repeat: no-repeat;
+    border-end-end-radius: 50px;
+    border-end-start-radius: 50px;
+    margin: 0 2rem 2rem 2rem;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+.athletes-presentation-img h1 {
+    width: 80%;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+}
+
+/*Double Arrow*/
+
+.arrow-icon {
+    width: 100%;
+    height: 50%; 
+    cursor: pointer; 
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 1));
+}
+
+.double-arrow:hover .arrow-icon {
+    transform: scale(1.1); 
+    transition: transform 0.2s ease-in-out;
+}
+
+.athletes-presentation-img a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*ATHLETES PEOPLE*/
+
+.athletes-people {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.athletes-people-container {
+    width: 100%;
+    height: auto;
+}
+
+.skydiving, .diving, .climbing {
+    width: 100%;
+    height: auto;
+}
+
+.skydiving-title, .climbing-title, .diving-title {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: center;
+}
+
+.skydiving-title img {
+    width: 3rem;
+    padding-right: .5rem;
+    height: auto;
+}
+
+.climbing-title img {
+    width: 3rem;
+    height: auto;
+    padding-right: .5rem;
+}
+
+.diving-title img {
+    width: 3rem;
+    padding-right: .5rem;
+    height: auto;
+}
+
+.skydiving-title h1, .climbing-title h1, .diving-title h1 {
+    margin-bottom: 1rem;
+    color: #03045E;
+    font-size: clamp(1.5rem, 1rem + 1.667vw, 3rem);
+}
+
+.people {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row nowrap;
+
+    margin: 20vh 0 20vh 0;
+}
+
+.skydiving #Kai {
+    margin-top: 3rem;
+}
+
+.people #Kai{
+    margin-top: 0;
+}
+
+.people-space1 {
+    flex: 0 0 10%;
+}
+
+.people-space2 {
+    flex: 0 0 90%;
+}
+
+.people-container1 {
+    width: 100%;
+    height: auto;
+    background:#d7faff;
+
+    border-start-start-radius: 50px;
+    border-end-start-radius: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.people-container2 {
+    width: 100%;
+    height: auto;
+    background:#d7faff;
+
+    border-end-end-radius: 50px;
+    border-start-end-radius: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.people-text-container1 {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.people-text-container1 p {
+    column-count: 2;
+    column-gap: 2rem;
+}
+
+.people-text-container2 p {
+    column-count: 2;
+    column-gap: 2rem;
+}
+
+.people-text-container2 {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 3rem;
+}
+
+/*Imagenes*/
+.people-img1 {
+    width: 30%;
+    height: auto;
+    min-height: 50vh;
+    border-radius: 50px;
+    margin: 3rem;
+
+    background-image: url(../img/athletes/athlete1.jpg);
+    background-size: cover; 
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.people-img2 {
+    width: 30%;
+    height: auto;
+    min-height: 50vh;
+    border-radius: 50px;
+    margin: 3rem;
+
+    background-image: url(../img/athletes/athlete2.jpg);
+    background-size: cover; 
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.people-img3 {
+    width: 30%;
+    height: auto;
+    min-height: 50vh;
+    border-radius: 50px;
+    margin: 3rem;
+
+    background-image: url(../img/athletes/athlete3.jpg);
+    background-size: cover; 
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.people-img4 {
+    width: 30%;
+    height: auto;
+    min-height: 50vh;
+    border-radius: 50px;
+    margin: 3rem;
+
+    background-image: url(../img/athletes/athlete4.jpg);
+    background-size: cover; 
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.people-img5 {
+    width: 30%;
+    height: auto;
+    min-height: 50vh;
+    border-radius: 50px;
+    margin: 3rem;
+
+    background-image: url(../img/athletes/athlete5.jpg);
+    background-size: cover; 
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.people-img6 {
+    width: 30%;
+    height: auto;
+    min-height: 50vh;
+    border-radius: 50px;
+    margin: 3rem;
+
+    background-image: url(../img/athletes/athlete6.jpg);
+    background-size: cover; 
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.people-text-container1 h2, .people-text-container2 h2 {
+    color: #03045E;
+    font-size: clamp(1.5rem, 1rem + 1.667vw, 3rem);
+}
+
+.secret-title {
+    display: none;
+    color: #03045E;
+    font-size: clamp(1.5rem, 1rem + 1.667vw, 3rem);
+}
+
+.people-text {
+    width: 80%;
+    height: auto;
+
+    border-radius: 30px;
+    background: rgb(246, 254, 255);
+}
+
+.people-text p {
+    padding: 0 1rem 0 1rem;
+}
+
+/*AWARDS*/
+.awards {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.awards-container {
+    width: 80%;
+    height: auto;
+}
+
+.awards-title-text {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+.awards-title-text p {
+    column-count: 2;
+    column-gap: 2rem;
+}
+
+.awards-title {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row nowrap;
+}
+
+.awards-title h1 {
+    color: #03045E;
+    font-size: clamp(1.5rem, 1rem + 1.667vw, 3rem);
+}
+
+.secret-title2 {
+    display: none;
+}
+
+.awards-title img {
+    width: 3rem;
+    padding-right: .5rem;
+    height: auto;
+}
+
+.award1, .award2, .award3 {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: raw wrap;
+}
+
+.award-img1 {
+    width: 30%;
+    aspect-ratio: 1/1;
+    margin: 2rem;
+
+    background-image: url(../img/athletes/trophy1.jpg);
+    background-size: cover; 
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.award-img2 {
+    width: 30%;
+    aspect-ratio: 1/1;
+    margin: 2rem;
+
+    background-image: url(../img/athletes/trophy2.jpg);
+    background-size: cover; 
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.award-img3 {
+    width: 30%;
+    aspect-ratio: 1/1;
+    margin: 2rem;
+
+    background-image: url(../img/athletes/trophy3.jpg);
+    background-size: cover; 
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.award-text {
+    width: 70%;
+    padding: 2rem;
+}
+
+.award1 h2, .award2 h2, .award3 h2 {
+    color: #03045E;
+    font-size: clamp(1.5rem, 1rem + 1.667vw, 3rem);
+}
+
+.award2 h2 {
+    text-align: right;
+}
+
+.award-text p{
+    column-count: 2;
+    column-gap: 2rem;
+}
+
+@media (max-width: 1100px) {
+    /*PEOPLE*/
+    
+    .people-text-container1 h2{
+        display: none;
+    }
+    .people-text-container2 h2{
+        display: none;
+    }
+    .secret-title {
+        display: block;
+    }
+    .people-container1 {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .people-container2 {
+        flex-direction: column-reverse;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .people-text-container1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .people-text-container2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /*PEOPLE IMGS*/
+    .people-img1 {
+        width: 50%;
+        height: auto;
+        aspect-ratio: 4 / 5;
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+
+    .people-img2 {
+        width: 50%;
+        height: auto;
+        aspect-ratio: 4 / 5;
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+
+    .people-img3 {
+        width: 50%;
+        height: auto;
+        aspect-ratio: 4 / 5;
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+
+    .people-img4 {
+        width: 50%;
+        height: auto;
+        aspect-ratio: 4 / 5;
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+
+    .people-img5 {
+        width: 50%;
+        height: auto;
+        aspect-ratio: 4 / 5;
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+
+    .people-img6 {
+        width: 50%;
+        height: auto;
+        aspect-ratio: 4 / 5;
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+    /*AWARDS*/
+    .awards-title-text p {
+        column-count: 1;
+    }
+    .award-text p {
+        column-count: 1;
+    }
+    .award-img1 {
+        aspect-ratio: 1 / 2;
+    }
+    .award-img2 {
+        aspect-ratio: 1 / 2;
+    }
+    .award-img3 {
+        aspect-ratio: 1 / 2;
+    }
+}
+
+@media (max-width: 900px) {
+    .people-text p {
+        column-count: 1;
+    }
+    /*AWARDS*/
+    .award-text p {
+        column-count: 2;
+    }
+    .secret-title2 {
+        display: block;
+    }
+    .award-text h2 {
+        display: none;
+    }
+    .award1, .award3 {
+        flex-direction: column;
+    }
+    .award2 {
+        flex-direction: column-reverse;
+    }
+    .award-img1 {
+        width: 50%;
+        aspect-ratio: 1 / 1;
+        margin: 0;
+    }
+    .award-img2 {
+        width: 50%;
+        aspect-ratio: 1 / 1;
+        margin: 0;
+    }
+    .award-img3 {
+        width: 50%;
+        aspect-ratio: 1 / 1;
+        margin: 0;
+    }
+    .awards-container {
+        width: 90%;
+    }
+    .award-text {
+        width: 90%;
+    }
+}
+
+@media (max-width: 700px) {
+    /*PEOPLE SPACES*/
+    .people-space1 {
+        flex: 0;
+    }
+    .people-space2 {
+        flex: 0 0 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .skydiving-title, .climbing-title, .diving-title {
+        width: 80%;
+    }
+    .people-text {
+        width: 90%;
+    }
+    
+    /*PEOPLE IMGS*/
+    .people-img1 {
+        width: 60%;
+    }
+    .people-img2 {
+        width: 60%;
+    }
+    .people-img3 {
+        width: 60%;
+    }
+    .people-img4 {
+        width: 60%;
+    }
+    .people-img5 {
+        width: 60%;
+    }
+    .people-img6 {
+        width: 60%;
+    }
+    /*PEOPLE LOGOS*/
+    .diving-title img, .climbing-title img, .skydiving-title img {
+        width: 2rem;
+    }
+
+    /*AWARDS*/
+    .award-text p {
+        column-count: 1;
+    }
+    .award-img1 {
+        width: 70%;
+    }
+    .award-img2 {
+        width: 70%;
+    }
+    .award-img3 {
+        width: 70%;
+    }
+}

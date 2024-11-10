@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Arya:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "NouvellRegular";
+    src: url(../fonts/NouvelRRegular.ttf) format("truetype"),
+         url(../fonts/NouvelRRegular.woff2) format("woff2"),
+         url(../fonts/NouvelRRegular.woff) format("woff"),
+}
+
+@font-face {
+    font-family: "NouvellBold";
+    src: url(../fonts/NouvelRBold.ttf) format("truetype"),
+         url(../fonts/nouvelrbold-webfont.woff2) format("woff2"),
+         url(../fonts/nouvelrbold-webfont.woff) format("woff"),
+}
+
+@font-face {
+    font-family: "NouvellSemiBold";
+    src: url(../fonts/NouvelRSemibold.ttf) format("truetype"),
+         url(../fonts/nouvelrsemibold-webfont.woff2) format("woff2"),
+         url(../fonts/nouvelrsemibold-webfont.woff) format("woff"),
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.last {
+    text-align-last: right;
+}
+
+h1 {
+    font-family: NouvellBold, sans-serif;
+    font-size: clamp(2rem, 1.667rem + 1.111vw, 3rem);
+    font-variant: small-caps;
+    text-align: justify;
+    color: white;
+    margin: 0;
+    font-weight: 600;
+}
+
+h2 {
+    font-family: NouvellSemiBold, sans-serif;
+    text-align: justify;
+    font-size: clamp(1rem, 0.667rem + 1.111vw, 2rem);
+    color: white;
+    font-weight: 400;
+}
+
+h3 {
+    font-family: Arya, sans-serif;
+    text-align: justify;
+    font-size: clamp(1.5rem, 0.667rem + 1.111vw, 2rem);
+    color:#03045E;
+    font-weight: 400;
+}
+
+p {
+    font-family: Montserrat, Calibri;
+    text-align: justify;
+    word-spacing: .2rem;
+    color: #333;
+    font-size: clamp(1rem, 0.933rem + 0.222vw, 1.2rem);
+}
+
+/*Menú hamburguesa para moviles*/
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: #03045E;
+    margin: 3px 0;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.logo-secreto {
+    display: none;
+}
+
+.logo-secreto img {
+    width: 100px;
+    height: auto;
+    padding: 1rem;
+}
+
+/*NAV*/
+
+header {
+    width: 100%;
+    height: 5vh;
+    display: flex; 
+    position: fixed;
+    z-index: 1000;
+    justify-content: flex-start;
+}
+
+.main-nav {
+    width: 100%;
+    height: auto;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
+
+    font-family: NouvellBold, sans-serif;
+    font-size: clamp(1rem, 0.833rem + 0.556vw, 1.5rem);
+    color: #03045E;
+    background: rgba(195, 248, 255, 0.8);
+}
+
+.list-nav {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; 
+    margin: 0;
+    padding: 0;
+    font-size: 1.7rem;
+}
+
+
+.list-nav li {
+    margin: 0 3rem;
+    display: inline;
+}
+
+.list-nav li a:hover {
+    color: white;
+}
+
+.list-nav li a{
+    color: inherit; 
+    text-decoration: none;
+}
+
+.logo {
+    flex-shrink: 0;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    padding: 1rem;
+}
+
+/*FOOTER*/
+
+footer {
+    width: 100%;
+    height: auto;
+    background: rgba(116, 133, 189, 0.3);
+    border-start-end-radius: 30px;
+    border-start-start-radius: 30px;
+    margin-top: 2rem;
+    padding: 3vh 0;
+}
+
+.footer-container {
+    width: 70%;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Columnas en el footer */
+.footer-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 2px solid #03045E;
+}
+
+.footer-logo img {
+    max-width: 100%;
+}
+
+.column {
+    width: 50%;
+    padding: 2vw;
+}
+
+.about {
+    align-self: center;
+}
+
+.about p {
+    text-align: justify;
+    text-align-last: center;
+}
+
+.contact-us {
+    border-left: 2px solid #03045E;
+    margin-bottom: 2vh;
+}
+
+.column p {
+    font-size: 1rem;
+}
+
+/* Estilos para la información de la empresa */
+.about h3, .contact-us h3 {
+    margin-bottom: 10px;
+}
+
+.about p, .contact-us p {
+    color: #333;
+}
+
+/* Estilos para la sección de redes sociales */
+.social-media {
+    list-style: none;
+    padding: 0;
+}
+
+.social-media li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.social-media img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.social-media a {
+    color: #333;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
+
+.copyright p {
+    font-size: 1rem;
+}
+
+@media (max-width: 1150px) {
+    /*BURGER*/
+    .hamburger {
+        display: flex;
+        z-index: 9999;
+        cursor: pointer;
+    }
+    
+    /*Mostrar la lista de navegación cuando el checkbox esté activado*/
+    .menu-toggle:checked ~ .list-nav {
+        display: flex;
+    }
+    
+    .list-nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%; 
+        height: 50vh; 
+        background-color: rgba(195, 248, 255, 0.9); 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .logo-secreto {
+        display: flex;
+    }
+    
+    .list-nav li {
+        margin: 15px 0;
+    }
+    
+    .list-nav a {
+        color: white;
+        font-size: 24px;
+        text-decoration: none;
+    }
+
+    /* Configuración para convertir el menú de hamburguesa en una "X" al activarse */
+    .menu-toggle:checked + .hamburger .bar:nth-child(1) {
+        transform: rotate(45deg) translate(7.5px, 7.5px);
+    }
+    
+    .menu-toggle:checked + .hamburger .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .menu-toggle:checked + .hamburger .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+    
+    /*FOOTER*/
+    .footer-container {
+        width: 80%;            
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-content {
+        flex-direction: column;
+    }
+    .contact-us {
+        border-top: 2px solid #03045E;
+        border-left: none;
+    }
+    .column {
+        width: 100%;
+        padding: 0;
+        align-self: center;
+        text-align: center;
+    }
+    .contact-us p {
+        text-align-last: center;
+    }
+    .contact-us h3 {
+        text-align: center;
+    }
+    .footer-logo img {
+        width: 80%;
+    }
+    .social-media {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
